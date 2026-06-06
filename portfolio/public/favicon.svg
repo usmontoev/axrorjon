@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#000"/>
+    </radialGradient>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD93D"/>
+      <stop offset="100%" stop-color="#FF9F1C"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- background circle -->
+  <circle cx="32" cy="32" r="31" fill="url(#bg)" stroke="rgba(255,217,61,0.3)" stroke-width="1.2"/>
+
+  <!-- U letter -->
+  <path d="M14 18 L14 36 Q14 48 26 48 Q38 48 38 36 L38 18"
+        fill="none" stroke="url(#text-grad)" stroke-width="5"
+        stroke-linecap="round" stroke-linejoin="round"
+        filter="url(#glow)"/>
+
+  <!-- N letter -->
+  <path d="M42 48 L42 18 L54 48 L54 18"
+        fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="4.2"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
