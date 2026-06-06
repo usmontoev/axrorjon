@@ -1,16 +1,17 @@
 import { motion } from "framer-motion";
 import {
   FaGitlab, FaTelegramPlane, FaInstagram, FaTiktok, FaPhoneAlt,
+  FaGithub,
 } from "react-icons/fa";
 import { FiArrowUpRight } from "react-icons/fi";
 import { useLang } from "../i18n/LanguageContext";
 
 const socials = [
-  { icon: <FaGitlab />,        href: "https://gitlab.com/ulugb3kjon",      label: "GitLab" },
-  { icon: <FaTelegramPlane />, href: "https://t.me/Ulugbek_devv",          label: "Telegram" },
-  { icon: <FaInstagram />,     href: "https://instagram.com/Ulugbek_devv", label: "Instagram" },
-  { icon: <FaTiktok />,        href: "https://tiktok.com/@ulugbek_devv",   label: "TikTok" },
-  { icon: <FaPhoneAlt />,      href: "tel:+998935422005",                   label: "Phone" },
+  { icon: <FaGithub />,        href: "https://gitlab.com/ulugb3kjon",      label: "GitHub" },
+  { icon: <FaTelegramPlane />, href: "https://t.me/usmontoev",          label: "Telegram" },
+  { icon: <FaInstagram />,     href: "https://instagram.com/usmontoev", label: "Instagram" },
+  { icon: <FaTiktok />,        href: "https://tiktok.com/@usmontoev",   label: "TikTok" },
+  { icon: <FaPhoneAlt />,      href: "tel:+998901234567",                   label: "Phone" },
 ];
 
 const navIds = ["home", "about", "skills", "projects", "contact"];
@@ -74,7 +75,7 @@ export default function Footer() {
 
           <motion.div className="footer__ctaActions" variants={fadeUp}>
             <a
-              href="https://t.me/Ulugbek_devv"
+              href="https://t.me/usmontoev"
               target="_blank"
               rel="noreferrer"
               className="footer__ctaBtn footer__ctaBtn--primary"
@@ -82,7 +83,7 @@ export default function Footer() {
               Get in touch <FiArrowUpRight />
             </a>
             <a
-              href="https://gitlab.com/ulugb3kjon"
+              href="https://github.com/usmontoev"
               target="_blank"
               rel="noreferrer"
               className="footer__ctaBtn footer__ctaBtn--secondary"
@@ -121,8 +122,8 @@ export default function Footer() {
                   stroke="white" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <div className="footer__brandText">
-                <span className="footer__brandName">Ulug'bek Nurmatov</span>
-                <span className="footer__brandRole">Front-end Developer</span>
+                <span className="footer__brandName">Usmontoev Ahrorjon</span>
+                <span className="footer__brandRole">Full-Stack Developer</span>
               </div>
             </motion.div>
 
@@ -131,7 +132,7 @@ export default function Footer() {
             {/* location + email */}
             <motion.div className="footer__info" variants={fadeLeft}>
               <span>📍 Tashkent, Uzbekistan</span>
-              <span>✉️ elbeknurmatov01@gmail.com</span>
+              <span>✉️ usmontoyev07@gmail.com</span>
               <span>💼 Available for work</span>
             </motion.div>
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const LETTERS = ["U", "l", "u", "g", "'", "b", "e", "k"];
+const LETTERS = ["A", "h", "r", "o", "r", "j", "o", "n"];
 
 function UNMark() {
   return (
